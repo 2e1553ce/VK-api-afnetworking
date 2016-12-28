@@ -54,7 +54,7 @@ static NSInteger friendsInRequest = 15;
         self.firstLaunch = NO;
         
         [[AVServerManager sharedManager] authorizeUser:^(AVUser *user) {
-            NSLog(@"AUTHORIZED!");
+            NSLog(@"AUTHORIZED! ");
             NSLog(@"%@ %@", user.firstName, user.lastName);
         }];
     }
