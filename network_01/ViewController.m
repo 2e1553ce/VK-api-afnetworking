@@ -43,8 +43,6 @@ static NSInteger friendsInRequest = 15;
     self.loadingData = YES;
     [self getFriendsFromServer];
     
-    
-    
 }
 
 - (void)viewDidAppear:(BOOL)animated{
