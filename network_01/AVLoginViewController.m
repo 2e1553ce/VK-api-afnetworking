@@ -59,7 +59,7 @@
         //"&redirect_uri=hello.there"
         "&scope=139286"
         "&response_type=token"
-        "&v=5.52";
+        "&v=5.64";
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
@@ -109,10 +109,10 @@
             
             if([[comp firstObject] isEqualToString:@"access_token"]){
                 
-                accsessToken.token = [comp lastObject];
+                accsessToken.token = @"87c166c356c35f6d835048af60d84014fa57d4eae";//[comp lastObject];
             }else if([[comp firstObject] isEqualToString:@"user_id"]){
                 
-                accsessToken.userID = [comp lastObject];
+                accsessToken.userID = @"goalan";//[comp lastObject];
             }else if([[comp firstObject] isEqualToString:@"expires_in"]){
                 
                 NSTimeInterval interval = [[comp lastObject] doubleValue];

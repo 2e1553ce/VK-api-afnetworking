@@ -25,7 +25,6 @@
 @implementation AVServerManager
 
 + (AVServerManager *)sharedManager{
-    
     static AVServerManager *manager = nil;
     
     if(!manager){
@@ -41,7 +40,6 @@
 }
 
 - (id)init{
-    
     self = [super init];
     
     if(self){
@@ -55,7 +53,7 @@
 }
 
 - (void) authorizeUser:(void(^)(AVUser* user)) completion {
-    
+
     AVLoginViewController* vc =
     [[AVLoginViewController alloc] initWithCompletionBlock:^(AVAccessToken *token) {
         
@@ -140,7 +138,7 @@
                     onFailure:(void(^)(NSError *error, NSInteger  statusCode))failure{
     
     NSDictionary *params = [NSDictionary dictionaryWithObjectsAndKeys:
-                            @"1995919",     @"user_id",
+                            @"27319311",     @"user_id",
                             @"name",        @"order",
                             @(count),       @"count",
                             @(offset),      @"offset",

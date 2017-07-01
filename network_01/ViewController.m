@@ -89,6 +89,7 @@ static NSInteger friendsInRequest = 15;
                                                     
                                                     [self.arrayOfFriends addObjectsFromArray:friends];
                                                     
+                                      
                                                     NSMutableArray *arrayOfIndexPathes = [[NSMutableArray alloc] init];
                                                     
                                                     for(int i = (int)[self.arrayOfFriends count] - (int)[friends count]; i < [self.arrayOfFriends count]; ++i){
